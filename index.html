@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crown of Echoes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="story-title">The Crown of Echoes</h1>
+        
+        <div class="story-content">
+            <img id="story-image" src="images/start.jpg" alt="Story scene">
+            <div id="tooltip" class="tooltip">Hover for hints!</div>
+            
+            <div id="text-container">
+                <p id="paragraph1">You are a hero on a quest to reforge the legendary Crown of Echoes, shattered long ago. The kingdom's fate depends on your success. Your journey begins at the crossroads, where you must choose your first destination.</p>
+            </div>
+            
+            <div id="input-container" class="hidden">
+                <input type="text" id="user-input" placeholder="Enter your answer...">
+                <button id="submit-button">Submit</button>
+            </div>
+            
+            <div id="choices-container">
+                <button id="choice1">The Chain of Echoes</button>
+                <button id="choice2">The Sunken Ruins</button>
+                <button id="choice3">The Whispering Grove</button>
+            </div>
+            
+            <div id="navigation">
+                <button id="next-paragraph" class="hidden">Continue</button>
+                <button id="back-button" class="hidden">Back</button>
+            </div>
+            
+            <div id="clues-container" class="hidden">
+                <h3>Collected Clues:</h3>
+                <ul id="clues-list"></ul>
+            </div>
+            
+            <div id="inventory">
+                <h3>Inventory:</h3>
+                <ul id="inventory-list"></ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
