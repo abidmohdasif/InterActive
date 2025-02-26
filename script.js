@@ -10,7 +10,7 @@ function updateStory(text) {
     
     // Add typing effect with a for loop
     let i = 0;
-    const typingSpeed = 30; // milliseconds per character
+    const typingSpeed = 10; // milliseconds per character
     
     const typingEffect = setInterval(() => {
         if (i < text.length) {
