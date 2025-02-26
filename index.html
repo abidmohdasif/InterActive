@@ -3,29 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- this is the title that shows up in the browser tab -->
   <title>Shattered Crown</title>
+  <!-- this connects to the style file that makes everything look cool -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- this is for the background music that plays -->
   <audio id="music" autoplay loop>
     <source src="backgroundMusic.mp3" type="audio/mp3">
   </audio>
+  
   <div class="container">
+    <!-- the big title at the top -->
     <h1>Shattered Crown</h1>
+    
     <p id="story-text">
       Are you ready to find the Mysterious Shattered Crown? If you are, press Start If you want to exit the page enter o on your keyboard.
     </p>
+    <!-- this holds the picture that changes with the story -->
     <div class="image-container">
       <img id="story-image" src="Crown.jpg" alt="Story Scene" />
+      <!-- secret hint that shows up when you hover over the image -->
       <div id="tooltip">Hey, I guess You found the hint Well here it is. If you Press Start you can go back to the beginning and choose the right choices to end up as the HERO. Good Luck You Will Need It</div>
     </div>
+    <!-- these are the buttons for making choices -->
     <div class="choices">
       <button id="choice1" class="choice-button" style="display: none;">Choice 1</button>
       <button id="choice2" class="choice-button" style="display: none;">Choice 2</button>
     </div>
+    <!-- this is the button to start the game -->
     <button id="next-button">Start</button>
   </div>
 
+  <!-- this connects to the javascript file that makes the game work -->
   <script src="script.js"></script>
 </body>
 </html>
