@@ -5,6 +5,16 @@ const choice1Button = document.getElementById('choice1');
 const choice2Button = document.getElementById('choice2');
 const tooltip = document.getElementById('tooltip');
 
+window.onload = function() {
+    // Start background music
+    document.getElementById('music').play();
+}
+document.addEventListener('click', function playOnClick() {
+    document.getElementById('music').play();
+    document.removeEventListener('click', playOnClick);
+});
+
+
 function updateStory(text) {
     storyText.textContent = ''; // Clear existing text
     
