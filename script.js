@@ -69,13 +69,15 @@ function bargainEntity() {
 function acceptBlessing() {
     updateStory('You accepted the blessing. The crown\'s power surges through you.');
     changeImage('accept.jpg');
-    displayChoices('See your Fate',hero);
+    displayChoices('See your Fate', 'Return', hero, start);
+    // Added a second choice and made sure there are 4 parameters total
 }
 
 function declineBlessing() {
     updateStory('You declined the offer and You are able to steal it and escape but then you have a bounty on your head');
     changeImage('decline.jpg');
-    displayChoices('See your Fate',death2);
+    displayChoices('See your Fate', 'Try to escape', death2, start);
+    // Added a second choice and made sure there are 4 parameters total
 }
 
 function start() {
