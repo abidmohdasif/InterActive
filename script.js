@@ -14,6 +14,14 @@ document.addEventListener('click', function playOnClick() {
     document.removeEventListener('click', playOnClick);
 });
 
+// Keyboard navigation
+document.addEventListener('keydown', function(event) {
+    // If key '0' is pressed, reload the page to restart
+    if (event.key === "o") {
+      location.reload();
+    }
+  });
+
 
 function updateStory(text) {
     storyText.textContent = ''; // Clear existing text
